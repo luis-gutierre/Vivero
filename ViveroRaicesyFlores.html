@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivero Raíces y Flores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('c680a53e-0a7a-4fe4-8b95-c0f340657e05.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+ </style>
+</head>
+<body class="bg-emerald-50 text-gray-800">
+  <div id="app" class="flex flex-col min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm p-4 sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-emerald-800">Vivero Raíces y Flores</a>
+        <nav class="hidden md:flex space-x-6 text-lg font-medium">
+          <a href="#inicio" class="hover:text-emerald-600">Inicio</a>
+          <a href="#plantas-interiores" class="hover:text-emerald-600">Plantas Interiores</a>
+          <a href="#plantas-exteriores" class="hover:text-emerald-600">Plantas Exteriores</a>
+          <a href="#materiales" class="hover:text-emerald-600">Materiales</a>
+          <a href="#contacto" class="hover:text-emerald-600">Contacto</a>
+        </nav>
+        <button id="menu-button" class="md:hidden text-emerald-600">
+          <!-- icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="hidden md:hidden mt-4 text-center space-y-2 text-lg font-medium">
+        <a href="#inicio" class="block py-2 hover:bg-emerald-100">Inicio</a>
+        <a href="#plantas-interiores" class="block py-2 hover:bg-emerald-100">Plantas Interiores</a>
+        <a href="#plantas-exteriores" class="block py-2 hover:bg-emerald-100">Plantas Exteriores</a>
+        <a href="#materiales" class="block py-2 hover:bg-emerald-100">Materiales</a>
+        <a href="#contacto" class="block py-2 hover:bg-emerald-100">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="relative hero-section py-20 md:py-32 flex-grow flex items-center justify-center">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Vivero Raíces y Flores</h1>
+        <p class="text-xl md:text-2xl font-medium mb-8">Tu vivero bonito para llenar tu hogar de vida.</p>
+        <a href="#plantas-interiores"
+          class="bg-emerald-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105">
+          Descubre Nuestras Plantas
+        </a>
+      </div>
+    </section>
+
+    <!-- PLANTAS INTERIORES -->
+    <section id="plantas-interiores" class="bg-white py-16 md:py-24 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-800">Plantas Interiores</h2>
+        <div id="productos-interiores-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- PLANTAS EXTERIORES -->
+    <section id="plantas-exteriores" class="bg-emerald-100 py-16 md:py-24 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-800">Plantas Exteriores</h2>
+        <div id="productos-exteriores-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- MATERIALES -->
+    <section id="materiales" class="bg-white py-16 md:py-24 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-800">Materiales y Accesorios</h2>
+        <div id="materiales-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="bg-emerald-800 text-white py-16 md:py-24 px-4">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
+        <p class="text-lg mb-8">¿Tienes alguna pregunta? ¡Escríbenos o mándanos un WhatsApp!</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+          <!-- solo correo válido -->
+          <a href="mailto:plantasdalias@gmail.com"
+            class="flex items-center space-x-2 bg-white text-emerald-800 py-3 px-6 rounded-full font-semibold hover:bg-gray-200 transition">
+            📧 <span>plantasdalias@gmail.com</span>
+          </a>
+          <!-- whatsapp -->
+          <a href="https://wa.me/51993575931" target="_blank"
+            class="flex items-center space-x-2 bg-green-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-green-600 transition">
+            💬 <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+      <p>&copy; 2024 Vivero Raíces y Flores. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- mensajes -->
+  <div id="message-box" class="fixed bottom-4 right-4 z-50"></div>
+
+  <script>
+    // --- Datos de productos ---
+    const productos = {
+      "plantas-interiores": [
+        {
+          nombre: "anturio",
+          descripcion: "Hojas en forma de corazón y flores duraderas.",
+          precio: "59.99",
+          imagen: "https://placehold.co/400x400/047857/ffffff?text=Monstera",
+          uso: "Interior decorativo"
+        },
+        {
+          nombre: "bromelias",
+          descripcion: "Planta exótica con flores vistosas.",
+          precio: "59.99",
+          imagen: "https://placehold.co/400x400/047857/ffffff?text=Ficus+Lyrata",
+          uso: "Interior/semisombra"
+        }
+      ],
+      "plantas-exteriores": [
+        {
+          nombre: "cucarda",
+          descripcion: "Arbusto con flores grandes y coloridas.",
+          precio: "29.00",
+          imagen: "https://placehold.co/400x400/047857/ffffff?text=Dalia",
+          uso: "Exterior/jardín"
+        },
+        {
+          nombre: "lantana",
+          descripcion: "Arbusto resistente con racimos de flores multicolor.",
+          precio: "9.00",
+          imagen: "https://placehold.co/400x400/047857/ffffff?text=Bugambilia",
+          uso: "Exterior/jardín"
+        }
+      ],
+      "materiales": [
+        {
+          nombre: "Tierra Abonada",
+          descripcion: "Mezcla nutritiva para macetas, ideal para el crecimiento.",
+          precio: "8.00",
+          imagen: "https://placehold.co/400x400/047857/ffffff?text=Tierra+Abonada",
+          uso: "Sustrato para macetas y jardineras."
+        },
+        {
+          nombre: "Maceta de Cerámica",
+          descripcion: "Elegante maceta para resaltar tus plantas.",
+          precio: "12.00",
+          imagen: "https://placehold.co/400x400/047857/ffffff?text=Maceta",
+          uso: "Contenedor para plantas."
+        }
+      ]
+    };
+
+    // Menú móvil
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Renderizar productos
+    function generarProductos(categoria, containerId) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = '';
+      productos[categoria].slice(0, 2).forEach(producto => {
+        container.innerHTML += `
+          <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6 hover:scale-105 transition">
+            <img src="${producto.imagen}" alt="${producto.nombre}" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-emerald-700 mb-1">${producto.nombre}</h3>
+            <p class="text-sm text-gray-600 mb-2">${producto.descripcion}</p>
+            <p class="text-xs text-gray-500 mb-4">Uso ideal: ${producto.uso}</p>
+            <div class="flex justify-between w-full items-center">
+              <span class="text-2xl font-semibold text-emerald-900">S/${producto.precio}</span>
+              <button onclick="addToCart('${producto.nombre}')"
+                class="bg-emerald-800 text-white text-sm px-4 py-2 rounded-full hover:bg-emerald-700 transition">
+                Añadir
+              </button>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      generarProductos('plantas-interiores', 'productos-interiores-container');
+      generarProductos('plantas-exteriores', 'productos-exteriores-container');
+      generarProductos('materiales', 'materiales-container');
+    });
+
+    // Mensaje al añadir
+    function addToCart(productName) {
+      const box = document.getElementById('message-box');
+      const msg = document.createElement('div');
+      msg.textContent = `✅ ${productName} añadido al carrito`;
+      msg.className = 'bg-green-500 text-white px-6 py-3 rounded-full shadow-lg mb-2 transition-all transform translate-y-full opacity-0';
+      box.appendChild(msg);
+      setTimeout(() => {
+        msg.classList.remove('translate-y-full', 'opacity-0');
+        msg.classList.add('translate-y-0', 'opacity-100');
+      }, 10);
+      setTimeout(() => {
+        msg.classList.remove('opacity-100');
+        msg.classList.add('opacity-0');
+        setTimeout(() => msg.remove(), 300);
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
+
+
+
